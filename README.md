@@ -1,4 +1,14 @@
 # Roky
+
+> **NOTE:** A better alternative to the Roky Python implementation is **PurpleBug**.
+
+> **PurpleBug** is a graphical interface to the Roku Debugger for Windows users.
+
+> You can find **PurpleBug** at http://belltown-roku.tk/PurpleBug
+
+___
+
+
 Roky is a Windows console client for the Roku Debugger that provides line-editing, command history, and support for Unicode debugger output, unlike most Windows Telnet clients.
 
 Roky is a Python program requiring Python version 3.5 or later. It might be possible to port the code to run on a Mac, or to use an earlier version of Python, but I'll leave that up to others.
@@ -43,7 +53,7 @@ optional arguments:
   -o output-file  log debug output to file
 ````
 
-Documention on [GitHub](https://github.com/belltown/roky/blob/master/README.md) and at http://belltown-roku.appspot.com/roky.html
+Documention on [GitHub](https://github.com/belltown/roky/blob/master/README.md) and at http://belltown-roku.tk/Roky
 
 ## Line-Editing
 The small console window supports these line-editing keys:
@@ -72,4 +82,4 @@ Unicode characters above 1300 are rendered as one or two `\uhhhh` sequences. Not
 ## Limitations
 Due to the way the Windows console and Python readline functions work, roky requires two independent console windows: one for entering debugger *commands*, and one for viewing debugger *output* only. However, roky will create the second command window for you, and you can move and resize the windows. For example, you can move the main window off to the (right) side, so you still have a partial view of your BrightScript code, and put the smaller command window overlaying, or above, the main window.
 
-![Image of roky](http://belltown-roku.appspot.com/roky-1200.png)
+![Image of roky](http://belltown-roku.tk/Roky/static/roky-1200.png)
